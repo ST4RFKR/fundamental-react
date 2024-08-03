@@ -12,7 +12,7 @@ function PostItem(props) {
                     {props.post.body}
                 </div>
             </div>
-            <MyButton className="post_btns">
+            <MyButton onClick={() => props.remove(props.post)} className="post_btns">
                 Удалить
             </MyButton>
         </div>
